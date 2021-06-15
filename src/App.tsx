@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Styles/App.scss';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Landingpage from './Page/Landingpage';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar></Navbar>

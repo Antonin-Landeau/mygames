@@ -1,6 +1,10 @@
 import React from 'react'
 import Searchbar from './Searchbar';
 
+type NavbarProps = {
+    searchRes: any
+}
+
 const Navbar = () => {
     return (
         <header>

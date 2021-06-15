@@ -8,9 +8,9 @@ export const fetchGames = () => {
     .then(({data}) => console.log(data.results))
 }
 
-export const listGame = async () => {
+export const search = async (search : string) => {
     try {
-        const res = await fetch('https://rawg.io/api/collections/must-play/games');
+        const res = await fetch('https://api.rawg.io/api/games?key='+ApiKey+'&search='+search);
         const data = await res.json();
         return data;
     } catch (error) {
